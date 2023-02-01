@@ -1,6 +1,6 @@
 name: call_other_org
 on:
-  [ workflow_dispatch, workflow_call ]
+  [ workflow_dispatch ]
 
 jobs:
   build:
