@@ -1,0 +1,12 @@
+name: call_other_org
+on:
+  [ workflow_dispatch, workflow_call ]
+
+jobs:
+  build:
+    runs-on: 
+      group: nick-test-group
+    steps:
+      - run: echo hi
+  call_workflow:
+    uses: korea-dinos/nick-public/.github/workflows/call_me.yml@main
